@@ -53,18 +53,18 @@ const sections = [
   },
 ]
 
-function IntroPage() {
+function SummaryPage() {
   return (
     <div className="lesson-page">
       <section className="glass-card hero-card">
         <div>
-          <p className="eyebrow">Ground School Module</p>
-          <h2>Why Atmosphere Knowledge Is Mission-Critical</h2>
+          <p className="eyebrow">✈ Chapter 1 — Summary</p>
+          <h2>Intro &amp; The Physical Properties of Air</h2>
           <p>
             Your aircraft is fully supported by air. When air properties shift, lift,
             climb performance, takeoff distance, and altitude awareness all shift with
-            them. This page condenses the full concept narrative from your summary
-            notes into clear pilot-focused blocks.
+            them. This page condenses the full concept narrative into clear
+            pilot-focused blocks.
           </p>
         </div>
         <CockpitSvg />
@@ -107,4 +107,4 @@ function IntroPage() {
   )
 }
 
-export default IntroPage
+export default SummaryPage
