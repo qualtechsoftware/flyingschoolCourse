@@ -1,0 +1,16 @@
+<svg width="480" height="200" viewBox="0 0 480 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="200" rx="12" fill="#eaf2f8"/>
+  <rect x="30" y="14" width="420" height="60" rx="8" fill="#f4ecf7" stroke="#d7bde2" stroke-width="1"/>
+  <rect x="30" y="86" width="420" height="90" rx="8" fill="#d6eaf8" stroke="#aed6f1" stroke-width="1"/>
+  <line x1="30" y1="78" x2="450" y2="78" stroke="#f39c12" stroke-width="2.5" stroke-dasharray="8 6"/>
+  <text x="44" y="38" font-size="13" font-family="'DM Sans',sans-serif" fill="#8e44ad" font-weight="700">Stratosphere</text>
+  <text x="44" y="54" font-size="9" fill="#a569bd" font-family="'DM Sans',sans-serif">Stable · Smooth · Clear</text>
+  <text x="44" y="110" font-size="13" font-family="'DM Sans',sans-serif" fill="#2874a6" font-weight="700">Troposphere</text>
+  <text x="44" y="126" font-size="9" fill="#5dade2" font-family="'DM Sans',sans-serif">Weather · Turbulence · Variable temp</text>
+  <text x="200" y="74" font-size="10" font-family="'DM Sans',sans-serif" fill="#d68910" font-weight="700">≈ 36,000 ft — Tropopause</text>
+  <text x="310" y="54" font-size="9" fill="#a569bd" font-family="'DM Sans',sans-serif">Jets cruise here ✈</text>
+  <path d="M100 140C130 132 160 135 180 145" stroke="rgba(93,173,226,0.3)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M230 150C260 142 300 144 330 158" stroke="rgba(93,173,226,0.2)" stroke-width="8" stroke-linecap="round"/>
+  <text x="44" y="190" font-size="8" fill="#a0aab4" font-family="'DM Sans',sans-serif">▼ Sea level</text>
+  <text x="385" y="190" font-size="8" fill="#a0aab4" font-family="'DM Sans',sans-serif">▲ 40,000 ft+</text>
+</svg>

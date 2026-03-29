@@ -1,0 +1,21 @@
+<svg width="480" height="180" viewBox="0 0 480 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="180" rx="12" fill="#fef9e7"/>
+  <text x="205" y="32" font-size="24" fill="#f39c12">?</text>
+  <text x="155" y="56" font-size="14" font-family="'Playfair Display',serif" fill="#7d6608" font-weight="800">3 Golden Facts</text>
+  <line x1="155" y1="62" x2="320" y2="62" stroke="#f39c12" stroke-width="1.5" opacity="0.4"/>
+  <g font-size="10" font-family="'DM Sans',sans-serif" fill="#5a4a04">
+    <circle cx="60" cy="88" r="9" fill="none" stroke="#f39c12" stroke-width="1.2"/>
+    <text x="56" y="92" font-size="9" fill="#d68910" font-weight="700">1</text>
+    <text x="78" y="92">Density ?  ?  must fly faster</text>
+  </g>
+  <g font-size="10" font-family="'DM Sans',sans-serif" fill="#5a4a04">
+    <circle cx="60" cy="116" r="9" fill="none" stroke="#f39c12" stroke-width="1.2"/>
+    <text x="56" y="120" font-size="9" fill="#d68910" font-weight="700">2</text>
+    <text x="78" y="120">Temp stops falling ? 36,000 ft</text>
+  </g>
+  <g font-size="10" font-family="'DM Sans',sans-serif" fill="#5a4a04">
+    <circle cx="60" cy="144" r="9" fill="none" stroke="#f39c12" stroke-width="1.2"/>
+    <text x="56" y="148" font-size="9" fill="#d68910" font-weight="700">3</text>
+    <text x="78" y="148">Air: compressible, low-viscosity, high ? low pressure</text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+:root {
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --navy-900: #0a1628;
+  --navy-800: #0f2240;
+  --navy-700: #163a5e;
+  --navy-600: #1e5a8a;
+  --navy-500: #2874a6;
+  --sky-500: #3498db;
+  --sky-400: #5dade2;
+  --sky-300: #85c1e9;
+  --sky-200: #aed6f1;
+  --sky-100: #d6eaf8;
+  --sky-50: #eaf2f8;
+  --amber-600: #d68910;
+  --amber-500: #f39c12;
+  --amber-400: #f7c948;
+  --amber-300: #fad67d;
+  --amber-200: #fdeaa8;
+  --amber-100: #fef9e7;
+  --violet-700: #6c3483;
+  --violet-600: #8e44ad;
+  --violet-200: #d7bde2;
+  --violet-100: #f4ecf7;
+  --red-500: #e74c3c;
+  --green-600: #27ae60;
+  --green-100: #eafaf1;
+  --gray-50: #fafbfc;
+  --gray-100: #f4f6f8;
+  --gray-200: #e8ecf0;
+  --gray-300: #d5dbe2;
+  --gray-400: #a0aab4;
+  --gray-600: #5a6a78;
+  --gray-700: #3d4f5f;
+  --gray-800: #2c3e50;
+  --white: #ffffff;
+
+  font-family: var(--font-body);
+  color: var(--gray-800);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--gray-50);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--amber-400);
+  color: var(--navy-900);
+}

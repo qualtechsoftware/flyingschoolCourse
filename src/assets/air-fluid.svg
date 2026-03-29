@@ -1,0 +1,30 @@
+<svg width="480" height="180" viewBox="0 0 480 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="fA" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#3498db"/></marker>
+  </defs>
+  <rect width="480" height="180" rx="12" fill="#eaf2f8"/>
+  <text x="24" y="22" font-size="9" fill="#2874a6" font-weight="700" letter-spacing="0.08em" font-family="'DM Sans',sans-serif">HIGH PRESSURE</text>
+  <text x="265" y="22" font-size="9" fill="#d68910" font-weight="700" letter-spacing="0.08em" font-family="'DM Sans',sans-serif">LOW PRESSURE</text>
+  <rect x="20" y="30" width="120" height="55" rx="6" fill="#d6eaf8" stroke="#aed6f1" stroke-width="1"/>
+  <rect x="240" y="30" width="120" height="55" rx="6" fill="#fef9e7" stroke="#fad67d" stroke-width="1"/>
+  <circle cx="42" cy="50" r="3.5" fill="#2874a6"/><circle cx="58" cy="56" r="3.5" fill="#2874a6"/>
+  <circle cx="74" cy="48" r="3.5" fill="#2874a6"/><circle cx="90" cy="58" r="3.5" fill="#2874a6"/>
+  <circle cx="106" cy="52" r="3.5" fill="#2874a6"/><circle cx="50" cy="70" r="3.5" fill="#2874a6"/>
+  <circle cx="82" cy="72" r="3.5" fill="#2874a6"/><circle cx="118" cy="65" r="3.5" fill="#2874a6"/>
+  <circle cx="265" cy="52" r="3.5" fill="#d68910"/><circle cx="310" cy="64" r="3.5" fill="#d68910"/>
+  <circle cx="340" cy="50" r="3.5" fill="#d68910"/>
+  <path d="M150 58C170 52 200 50 220 52C228 53 235 55 240 58" stroke="#3498db" stroke-width="1.5" stroke-dasharray="4 4" fill="none" marker-end="url(#fA)"/>
+  <text x="168" y="46" font-size="8" fill="#3498db" font-family="'DM Sans',sans-serif">Air flows ?</text>
+  <rect x="20" y="100" width="70" height="55" rx="6" fill="#f4ecf7" stroke="#d7bde2" stroke-width="1"/>
+  <text x="30" y="132" font-size="9" fill="#8e44ad" font-weight="600" font-family="'DM Sans',sans-serif">Squeezed</text>
+  <path d="M30 108L80 108" stroke="#a569bd" stroke-width="1"/><path d="M30 145L80 145" stroke="#a569bd" stroke-width="1"/>
+  <text x="22" y="168" font-size="8" fill="#8e44ad" font-family="'DM Sans',sans-serif">Compressible</text>
+  <rect x="120" y="100" width="70" height="55" rx="6" fill="#eafaf1" stroke="#abebc6" stroke-width="1"/>
+  <path d="M135 128C145 122 155 120 170 122" stroke="#27ae60" stroke-width="1.5" fill="none"/>
+  <path d="M138 135C148 130 160 128 175 130" stroke="#27ae60" stroke-width="1" fill="none" opacity="0.5"/>
+  <text x="123" y="168" font-size="8" fill="#27ae60" font-family="'DM Sans',sans-serif">Low Viscosity</text>
+  <text x="230" y="118" font-size="11" fill="#2c3e50" font-weight="700" font-family="'DM Sans',sans-serif">Air is a fluid</text>
+  <text x="230" y="134" font-size="9" fill="#5a6a78" font-family="'DM Sans',sans-serif">� Flows like water</text>
+  <text x="230" y="148" font-size="9" fill="#5a6a78" font-family="'DM Sans',sans-serif">� Compressible (unlike water)</text>
+  <text x="230" y="162" font-size="9" fill="#5a6a78" font-family="'DM Sans',sans-serif">� Very low viscosity</text>
+</svg>

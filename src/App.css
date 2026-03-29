@@ -1,0 +1,607 @@
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* =========================================
+   SHELL
+   ========================================= */
+
+.app-shell {
+  min-height: 100vh;
+  width: min(1120px, 96vw);
+  margin: 0 auto;
+  padding: 24px 0 56px;
+}
+
+/* =========================================
+   TOPBAR
+   ========================================= */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: end;
+  padding: 20px 28px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--navy-800) 0%, var(--navy-700) 50%, var(--navy-600) 100%);
+  color: var(--white);
+  box-shadow: 0 4px 24px rgba(10, 22, 40, 0.18);
+  position: relative;
+  overflow: hidden;
+}
+
+.topbar::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--amber-500), var(--sky-400), var(--violet-600), var(--amber-500));
+  background-size: 200% 100%;
+  animation: shimmer 4s linear infinite;
+}
+
+.topbar .plane-icon {
+  font-size: 1.3rem;
+  margin-right: 5px;
+}
+
+.brand-tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+  color: var(--amber-300);
+}
+
+.brand h1 {
+  font-size: clamp(1.2rem, 2.6vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  padding: 9px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: all 0.25s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.nav-links a.active {
+  background: linear-gradient(135deg, var(--amber-400), var(--amber-500));
+  color: var(--navy-900);
+  border-color: var(--amber-400);
+  font-weight: 700;
+  box-shadow: 0 3px 12px rgba(243, 156, 18, 0.3);
+}
+
+.page-wrap {
+  margin-top: 20px;
+}
+
+/* =========================================
+   PAGE GRIDS
+   ========================================= */
+
+.lesson-page,
+.revision-page {
+  display: grid;
+  gap: 18px;
+}
+
+.lesson-page > *,
+.revision-page > * {
+  animation: fadeUp 0.5s ease both;
+}
+
+.revision-page > *:nth-child(2) { animation-delay: 0.04s; }
+.revision-page > *:nth-child(3) { animation-delay: 0.08s; }
+.revision-page > *:nth-child(4) { animation-delay: 0.12s; }
+.revision-page > *:nth-child(5) { animation-delay: 0.16s; }
+.revision-page > *:nth-child(6) { animation-delay: 0.20s; }
+.revision-page > *:nth-child(7) { animation-delay: 0.24s; }
+
+/* =========================================
+   CARD BASE
+   ========================================= */
+
+.glass-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 24px 28px;
+  border: 1px solid var(--gray-200);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.25s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   INLINE SVG (guaranteed render)
+   ========================================= */
+
+.block-svg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--gray-200);
+  margin-bottom: 16px;
+}
+
+/* =========================================
+   EYEBROW
+   ========================================= */
+
+.eyebrow {
+  font-family: var(--font-body);
+  color: var(--navy-600);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   INTRO — HERO
+   ========================================= */
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.hero-card h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: 800;
+  color: var(--navy-800);
+  line-height: 1.25;
+  margin: 8px 0 14px;
+  position: relative;
+  display: inline-block;
+}
+
+.hero-card h2::after {
+  content: '';
+  display: block;
+  margin-top: 8px;
+  width: 70%;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--amber-500), var(--sky-400));
+}
+
+.hero-card p {
+  color: var(--gray-600);
+  line-height: 1.75;
+  font-size: 1.02rem;
+}
+
+.hero-card .block-svg {
+  border: none;
+  margin-bottom: 0;
+}
+
+/* =========================================
+   VISUAL GRID
+   ========================================= */
+
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.visual-card .block-svg {
+  margin-bottom: 12px;
+}
+
+.visual-card h3 {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--navy-700);
+  margin-bottom: 6px;
+  position: relative;
+  display: inline-block;
+}
+
+.visual-card h3::after {
+  content: '';
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background: linear-gradient(90deg, var(--sky-400), var(--sky-200));
+}
+
+.visual-card p {
+  color: var(--gray-600);
+  line-height: 1.7;
+  font-size: 0.98rem;
+}
+
+/* =========================================
+   SECTION CARDS (Intro)
+   ========================================= */
+
+.section-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.section-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--sky-400), var(--amber-400));
+  border-radius: 16px 16px 0 0;
+}
+
+.section-card .block-svg {
+  margin-bottom: 12px;
+}
+
+.section-icon {
+  font-size: 1.05rem;
+  margin-right: 3px;
+}
+
+.section-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy-700);
+  margin-bottom: 10px;
+  padding-top: 2px;
+}
+
+.section-card p {
+  color: var(--gray-600);
+  line-height: 1.7;
+  font-size: 0.96rem;
+}
+
+.section-card p + p {
+  margin-top: 6px;
+}
+
+/* =========================================
+   REVISION HERO
+   ========================================= */
+
+.revision-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.revision-hero h2 {
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  font-weight: 800;
+  color: var(--navy-800);
+  line-height: 1.25;
+  margin-top: 8px;
+  position: relative;
+}
+
+.revision-hero h2::after {
+  content: '';
+  display: block;
+  margin-top: 8px;
+  width: 70%;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--amber-500), var(--sky-400));
+}
+
+.inline-images {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.inline-images .block-svg {
+  border-radius: 10px;
+  margin-bottom: 0;
+  transition: transform 0.3s ease;
+}
+
+.inline-images .block-svg:hover {
+  transform: scale(1.03);
+}
+
+/* =========================================
+   STUDY SECTIONS
+   ========================================= */
+
+.study-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.study-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 5px;
+  height: 100%;
+  border-radius: 16px 0 0 16px;
+  background: linear-gradient(180deg, var(--sky-400), var(--navy-600));
+}
+
+.study-section h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy-700);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--gray-200);
+  position: relative;
+}
+
+.study-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: -1px; left: 0;
+  width: 70px;
+  height: 2px;
+  border-radius: 1px;
+  background: linear-gradient(90deg, var(--amber-500), var(--sky-400));
+}
+
+/* =========================================
+   EXACT LIST
+   ========================================= */
+
+.exact-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 4px;
+}
+
+.exact-list li {
+  line-height: 1.7;
+  color: var(--gray-700);
+  padding: 7px 10px 7px 22px;
+  position: relative;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.exact-list li:hover {
+  background: var(--sky-50);
+}
+
+.exact-list li::before {
+  content: '›';
+  position: absolute;
+  left: 6px;
+  color: var(--sky-400);
+  font-weight: 800;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+/* =========================================
+   FORMULA BOX
+   ========================================= */
+
+.formula-box {
+  background: var(--amber-100);
+  border: 1px solid var(--amber-200);
+  border-left: 4px solid var(--amber-500);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 0 0 14px;
+  color: var(--gray-800);
+  line-height: 1.6;
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+}
+
+/* =========================================
+   MEMORY AID
+   ========================================= */
+
+.memory-aid {
+  margin-top: 14px;
+  background: var(--violet-100);
+  border: 1px solid var(--violet-200);
+  border-left: 4px solid var(--violet-600);
+  color: var(--violet-700);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.memory-aid strong {
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* =========================================
+   ALTITUDE TABLE
+   ========================================= */
+
+.altitude-table {
+  display: grid;
+  grid-template-columns: 0.7fr 1.15fr 1.15fr;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.table-head {
+  background: var(--navy-700);
+  color: var(--white);
+  font-weight: 700;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  padding: 10px 14px;
+}
+
+.table-cell {
+  padding: 10px 14px;
+  border-top: 1px solid var(--gray-200);
+  color: var(--gray-700);
+  font-size: 0.95rem;
+}
+
+.altitude-table .table-cell:nth-child(6n+4),
+.altitude-table .table-cell:nth-child(6n+5),
+.altitude-table .table-cell:nth-child(6n+6) {
+  background: var(--gray-50);
+}
+
+/* =========================================
+   HOT / COLD
+   ========================================= */
+
+.hot {
+  color: var(--red-500) !important;
+  font-weight: 700;
+}
+
+.hot::before {
+  content: '🔴' !important;
+  font-size: 0.65rem;
+}
+
+.cold {
+  color: #2471a3 !important;
+  font-weight: 700;
+}
+
+.cold::before {
+  content: '🔵' !important;
+  font-size: 0.65rem;
+}
+
+/* =========================================
+   GOLDEN FACTS
+   ========================================= */
+
+.golden-facts-card {
+  background: linear-gradient(160deg, var(--white) 0%, var(--amber-100) 100%) !important;
+  border-color: var(--amber-200) !important;
+}
+
+.golden-facts-card::before {
+  background: linear-gradient(180deg, var(--amber-500), var(--amber-400)) !important;
+}
+
+.golden-facts-card h3 {
+  color: #7d6608 !important;
+  border-bottom-color: var(--amber-200) !important;
+}
+
+.golden-facts-card h3::after {
+  background: var(--amber-500) !important;
+}
+
+.golden-facts-card .exact-list li {
+  color: #5a4a04 !important;
+  font-weight: 600;
+}
+
+.golden-facts-card .exact-list li::before {
+  content: '★' !important;
+  color: var(--amber-500);
+}
+
+/* =========================================
+   MISTAKES
+   ========================================= */
+
+.mistakes-card .exact-list li::before {
+  content: '' !important;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.page-footer {
+  text-align: center;
+  padding: 28px 20px 0;
+  color: var(--gray-400);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 930px) {
+  .topbar {
+    flex-direction: column;
+    align-items: start;
+    padding: 16px 18px;
+  }
+
+  .hero-card,
+  .visual-grid,
+  .section-list,
+  .revision-hero-grid,
+  .inline-images {
+    grid-template-columns: 1fr;
+  }
+
+  .glass-card {
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
+}

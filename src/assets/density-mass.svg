@@ -1,0 +1,24 @@
+<svg width="480" height="180" viewBox="0 0 480 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="aB" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#2874a6"/></marker>
+    <marker id="aY" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#d68910"/></marker>
+  </defs>
+  <rect width="480" height="180" rx="12" fill="#eaf2f8"/>
+  <rect x="20" y="35" width="100" height="110" rx="8" stroke="#2874a6" stroke-width="1.5" fill="#d6eaf8"/>
+  <circle cx="42" cy="65" r="5" fill="#2874a6"/><circle cx="65" cy="55" r="5" fill="#2874a6"/>
+  <circle cx="88" cy="68" r="5" fill="#2874a6"/><circle cx="50" cy="85" r="5" fill="#2874a6"/>
+  <circle cx="78" cy="80" r="5" fill="#2874a6"/><circle cx="98" cy="92" r="5" fill="#2874a6"/>
+  <circle cx="40" cy="105" r="5" fill="#2874a6"/><circle cx="68" cy="110" r="5" fill="#2874a6"/>
+  <circle cx="95" cy="115" r="5" fill="#2874a6"/><circle cx="55" cy="125" r="5" fill="#2874a6"/>
+  <circle cx="82" cy="130" r="5" fill="#2874a6"/>
+  <text x="34" y="25" font-size="11" fill="#2874a6" font-weight="700" font-family="'DM Sans',sans-serif">Dense Air</text>
+  <rect x="170" y="35" width="100" height="110" rx="8" stroke="#d68910" stroke-width="1.5" fill="#fef9e7"/>
+  <circle cx="200" cy="65" r="5" fill="#d68910"/><circle cx="240" cy="90" r="5" fill="#d68910"/>
+  <circle cx="215" cy="115" r="5" fill="#d68910"/><circle cx="250" cy="70" r="5" fill="#d68910"/>
+  <text x="186" y="25" font-size="11" fill="#d68910" font-weight="700" font-family="'DM Sans',sans-serif">Thin Air</text>
+  <path d="M310 65L400 65" stroke="#2874a6" stroke-width="2" marker-end="url(#aB)"/>
+  <path d="M310 115L400 115" stroke="#d68910" stroke-width="2" marker-end="url(#aY)"/>
+  <text x="310" y="58" font-size="10" fill="#2874a6" font-weight="600" font-family="'DM Sans',sans-serif">More Lift</text>
+  <text x="310" y="108" font-size="10" fill="#d68910" font-weight="600" font-family="'DM Sans',sans-serif">Less Lift</text>
+  <text x="310" y="160" font-size="9" fill="#a0aab4" font-family="'DM Sans',sans-serif">Density = mass / volume</text>
+</svg>
