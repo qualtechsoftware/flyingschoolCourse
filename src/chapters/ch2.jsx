@@ -433,82 +433,272 @@ export function RevisionContent() {
    ═══════════════════════════════════════════════════════════════ */
 
 export const questions = [
+  /* ─── PART A — Single Correct Answer (Q1–Q15) ─── */
   {
     id: 1,
-    text: 'The altimeter in a typical light aircraft measures which physical property to determine altitude?',
+    text: 'What is the symbol used for static pressure in aviation?',
     options: [
-      { key: 'A', text: 'Temperature of the ambient air.' },
-      { key: 'B', text: 'Static air pressure sensed through the static port.' },
-      { key: 'C', text: 'Dynamic (pitot) pressure created by forward motion.' },
-      { key: 'D', text: 'Air density calculated from humidity sensors.' },
+      { key: 'A', text: 'Upper-case P' },
+      { key: 'B', text: 'Lower-case p' },
+      { key: 'C', text: 'Lower-case q' },
+      { key: 'D', text: 'The Greek letter rho (ρ)' },
     ],
     answer: 'B',
     explanation:
-      'The altimeter works by sensing static air pressure through the static port. An evacuated aneroid capsule inside the instrument expands or contracts with changes in ambient static pressure, and a mechanical linkage translates that movement into an altitude indication on the dial.',
+      'By convention, static pressure is denoted by lower-case p. Upper-case P sometimes denotes total pressure, q denotes dynamic pressure, and ρ (rho) denotes air density.',
   },
   {
     id: 2,
-    text: 'A pilot is departing from an airfield and sets QNH on the altimeter subscale. The altimeter will indicate:',
+    text: 'The SI unit of pressure is the Pascal. What is the equivalent expression for one Pascal?',
     options: [
-      { key: 'A', text: 'Height above the airfield elevation.' },
-      { key: 'B', text: 'Altitude above mean sea level.' },
-      { key: 'C', text: 'Flight Level referenced to 1013.25 hPa.' },
-      { key: 'D', text: 'Density altitude corrected for temperature.' },
+      { key: 'A', text: '1 kg/m³' },
+      { key: 'B', text: '1 N/m²' },
+      { key: 'C', text: '1 N·m' },
+      { key: 'D', text: '1 kg·m/s²' },
     ],
     answer: 'B',
     explanation:
-      'QNH is the atmospheric pressure at mean sea level for a given location and time. When set on the subscale, the altimeter reads altitude above mean sea level (AMSL). This is the standard reference used below the Transition Altitude to ensure terrain and obstacle clearance.',
+      'Pressure = Force ÷ Area. Force is measured in Newtons (N) and area in square metres (m²), so pressure is N/m². One N/m² is defined as one Pascal (Pa).',
   },
   {
     id: 3,
-    text: 'In the International Standard Atmosphere (ISA), the sea-level temperature and pressure are:',
+    text: 'What is the standard sea-level static pressure in the International Standard Atmosphere (ISA)?',
     options: [
-      { key: 'A', text: '15\u00B0C and 1013.25 hPa.' },
-      { key: 'B', text: '0\u00B0C and 1013.25 hPa.' },
-      { key: 'C', text: '15\u00B0C and 1025.00 hPa.' },
-      { key: 'D', text: '20\u00B0C and 1013.25 hPa.' },
+      { key: 'A', text: '1000 hPa' },
+      { key: 'B', text: '1013.25 hPa' },
+      { key: 'C', text: '1023.50 hPa' },
+      { key: 'D', text: '1030.00 hPa' },
     ],
-    answer: 'A',
+    answer: 'B',
     explanation:
-      'The ISA defines standard sea-level conditions as a pressure of 1013.25 hPa (29.92 inHg) and a temperature of 15\u00B0C (59\u00B0F). Temperature then decreases at approximately 2\u00B0C per 1,000 ft up to the tropopause at about 36,000 ft.',
+      'The ISA defines sea-level static pressure as exactly 1013.25 hPa (= 1013.25 mb = 101,325 Pa). This value is the reference for altimeter pressure settings and all ISA performance calculations.',
   },
   {
     id: 4,
-    text: 'The Vertical Speed Indicator (VSI) works by comparing the static pressure inside the capsule with the pressure in the instrument case. The case pressure changes slowly because:',
+    text: 'How many Pascals are equal to one hectopascal (hPa)?',
     options: [
-      { key: 'A', text: 'The case is completely sealed with no connection to the static source.' },
-      { key: 'B', text: 'The case is connected to the static source through a calibrated leak (metering orifice).' },
-      { key: 'C', text: 'The case is connected to the pitot source rather than the static source.' },
-      { key: 'D', text: 'The case contains a heating element that controls air expansion.' },
+      { key: 'A', text: '10 Pa' },
+      { key: 'B', text: '100 Pa' },
+      { key: 'C', text: '1,000 Pa' },
+      { key: 'D', text: '0.1 Pa' },
     ],
     answer: 'B',
     explanation:
-      'The VSI case is connected to the static source through a calibrated leak (also called a metering orifice or restricted choke). This means the case pressure equalises with ambient pressure only slowly. The capsule, connected directly to the static source, responds immediately. The resulting pressure difference between capsule and case drives the needle and indicates rate of climb or descent.',
+      "The prefix 'hecto' means 100. Therefore 1 hPa = 100 Pa. Since sea-level ISA pressure is 1013.25 hPa, it is also 101,325 Pa.",
   },
   {
     id: 5,
-    text: 'An aircraft is flying from a warm air mass into a significantly colder air mass without changing the altimeter subscale setting. The effect on the altimeter is that it will:',
+    text: "Which statement correctly explains why static pressure is called 'static'?",
     options: [
-      { key: 'A', text: 'Under-read \u2014 true altitude will be higher than indicated.' },
-      { key: 'B', text: 'Over-read \u2014 true altitude will be lower than indicated.' },
-      { key: 'C', text: 'Remain accurate because the subscale corrects for temperature automatically.' },
-      { key: 'D', text: 'Fluctuate rapidly between over-reading and under-reading.' },
+      { key: 'A', text: 'Because pressure only acts when the aircraft is stationary on the ground' },
+      { key: 'B', text: 'Because it is caused by the stationary or static presence of the air' },
+      { key: 'C', text: 'Because pressure remains constant (static) throughout all phases of flight' },
+      { key: 'D', text: 'Because it only acts on static (non-moving) surfaces' },
     ],
     answer: 'B',
     explanation:
-      'In colder-than-ISA conditions, the air column is compressed and pressure levels are pushed closer to the ground. The altimeter, calibrated to ISA, interprets the pressure it senses as a higher altitude than the aircraft\u2019s true position. The rule is: \u201CFrom high to low (temperature or pressure), look out below\u201D \u2014 your true altitude is lower than indicated.',
+      "The term 'static' refers to the undisturbed, stationary nature of the air itself, not the aircraft. Static pressure acts on a moving aircraft just as it does on a stationary one.",
   },
   {
     id: 6,
-    text: 'Above the Transition Altitude, all aircraft are required to set their altimeter subscale to:',
+    text: 'A pilot sets an incorrect (lower than actual) QNH on the altimeter sub-scale before departure. What will the altimeter indicate compared to actual altitude?',
     options: [
-      { key: 'A', text: 'The local QNH for the nearest aerodrome.' },
-      { key: 'B', text: 'QFE for terrain clearance reference.' },
-      { key: 'C', text: '1013.25 hPa (standard pressure) to read Flight Levels.' },
-      { key: 'D', text: 'The regional QNH issued by the area control centre.' },
+      { key: 'A', text: 'A higher altitude than actual — the aircraft appears higher than it is' },
+      { key: 'B', text: 'A lower altitude than actual — the aircraft appears lower than it is' },
+      { key: 'C', text: 'The correct altitude, because the altimeter self-corrects' },
+      { key: 'D', text: 'Zero, because an incorrect QNH freezes the instrument' },
+    ],
+    answer: 'B',
+    explanation:
+      "If QNH is set too low, the altimeter 'thinks' sea-level pressure is lower than it actually is, so it calculates the aircraft is at a lower altitude than reality. This is dangerous: the aircraft may be closer to terrain than the pilot believes.",
+  },
+  {
+    id: 7,
+    text: 'At which altitude does static pressure approximately equal half the sea-level ISA value?',
+    options: [
+      { key: 'A', text: '10,000 ft' },
+      { key: 'B', text: '18,000 ft' },
+      { key: 'C', text: '25,000 ft' },
+      { key: 'D', text: '36,000 ft' },
+    ],
+    answer: 'B',
+    explanation:
+      'Static pressure approximately halves every 18,000 ft, not every 10,000 ft as many students assume. At 18,000 ft ISA, pressure is approximately 506 hPa (roughly half of 1013.25 hPa). The pressure–altitude relationship is logarithmic.',
+  },
+  {
+    id: 8,
+    text: "Which instrument is NOT directly supplied by the aircraft's static pressure source?",
+    options: [
+      { key: 'A', text: 'Altimeter' },
+      { key: 'B', text: 'Vertical Speed Indicator (VSI)' },
+      { key: 'C', text: 'Gyroscopic Direction Indicator (DI)' },
+      { key: 'D', text: 'Airspeed Indicator (ASI)' },
     ],
     answer: 'C',
     explanation:
-      'Above the Transition Altitude, all aircraft set 1013.25 hPa (standard pressure) on the subscale. This provides a common reference so that all aircraft in the same airspace share the same vertical datum, ensuring safe vertical separation. Altitude indications based on 1013 are called Flight Levels (e.g. FL350 = 35,000 ft on 1013).',
+      'The DI (also called Heading Indicator) is a gyroscopic instrument powered by vacuum or electrically. It does not rely on static pressure. The altimeter, VSI, and ASI all depend on the static source.',
+  },
+  {
+    id: 9,
+    text: 'Static pressure at a given altitude is primarily a result of which physical phenomenon?',
+    options: [
+      { key: 'A', text: 'The kinetic energy of air molecules in motion' },
+      { key: 'B', text: 'The weight of the column of atmosphere above that altitude' },
+      { key: 'C', text: 'The temperature gradient between the troposphere and stratosphere' },
+      { key: 'D', text: 'The Coriolis effect acting on large air masses' },
+    ],
+    answer: 'B',
+    explanation:
+      'Static pressure results directly from the gravitational weight of all the air above the measurement point pressing downward. Greater weight above = greater pressure. This is why pressure decreases with altitude as there is progressively less air mass overhead.',
+  },
+  {
+    id: 10,
+    text: 'An aircraft is cruising at FL350 in ISA conditions. The approximate static pressure at this level is:',
+    options: [
+      { key: 'A', text: '697 hPa' },
+      { key: 'B', text: '506 hPa' },
+      { key: 'C', text: '238 hPa' },
+      { key: 'D', text: '188 hPa' },
+    ],
+    answer: 'C',
+    explanation:
+      'At FL350 (35,000 ft) in ISA conditions, static pressure is approximately 238 hPa — roughly 23% of sea-level pressure. Pressure halves around FL180 (~506 hPa) and continues to fall. 697 hPa is approximate for 10,000 ft; 506 hPa for 18,000 ft; 188 hPa for 40,000 ft.',
+  },
+  {
+    id: 11,
+    text: 'Which of the following most accurately describes the relationship between static pressure and altitude?',
+    options: [
+      { key: 'A', text: 'Linear: pressure decreases by an equal amount per 1,000 ft' },
+      { key: 'B', text: 'Logarithmic: pressure decreases at a decreasing rate as altitude increases' },
+      { key: 'C', text: 'Exponential: pressure increases rapidly above the Tropopause' },
+      { key: 'D', text: 'Constant: pressure is the same throughout the Troposphere' },
+    ],
+    answer: 'B',
+    explanation:
+      'The pressure–altitude relationship is approximately logarithmic (or more precisely, follows the barometric formula). Pressure decreases quickly at low altitudes where air is dense, and more slowly at high altitudes where the remaining air column is thin.',
+  },
+  {
+    id: 12,
+    text: "An aircraft's static port becomes completely blocked by ice during flight. The aircraft subsequently climbs 2,000 ft. What will the altimeter indicate?",
+    options: [
+      { key: 'A', text: 'The correct altitude at the new height' },
+      { key: 'B', text: 'The altitude at which the port became blocked, regardless of actual altitude' },
+      { key: 'C', text: 'Zero, as the instrument loses all pressure reference' },
+      { key: 'D', text: 'An altitude 2,000 ft lower than actual' },
+    ],
+    answer: 'B',
+    explanation:
+      'If the static port is blocked, no new pressure information reaches the altimeter. The capsule remains at the pressure it was sensing when blockage occurred, so the altimeter continues to show the altitude at which the port blocked. This also affects the VSI (freezes at zero) and ASI (gives erroneous readings).',
+  },
+  {
+    id: 13,
+    text: 'The relationship between 1 millibar (mb) and 1 hectopascal (hPa) is best described as:',
+    options: [
+      { key: 'A', text: '1 mb = 0.01 hPa' },
+      { key: 'B', text: '1 mb = 10 hPa' },
+      { key: 'C', text: '1 mb = 1 hPa (numerically identical)' },
+      { key: 'D', text: '1 mb = 100 hPa' },
+    ],
+    answer: 'C',
+    explanation:
+      'The millibar and hectopascal are different names for exactly the same quantity. 1 mb = 1 hPa. No conversion is required. The millibar is an older meteorological unit; aviation transitioned to hPa, but both appear in charts and documents.',
+  },
+  {
+    id: 14,
+    text: 'An aircraft departs from an airfield where actual QNH is 1030 hPa, but the pilot sets 1013 hPa on the altimeter sub-scale (the standard setting). If the field elevation is 300 ft, what will the altimeter approximately indicate at the moment of brake release?',
+    options: [
+      { key: 'A', text: '300 ft (correct field elevation)' },
+      { key: 'B', text: 'Approximately 450 ft (reading higher than actual)' },
+      { key: 'C', text: 'Approximately 150 ft (reading lower than actual)' },
+      { key: 'D', text: 'Zero feet (ground level)' },
+    ],
+    answer: 'B',
+    explanation:
+      'Each 1 hPa difference in altimeter setting corresponds to approximately 27–30 ft. The actual QNH (1030) minus the set pressure (1013) = 17 hPa difference. 17 × ~27 ft = 459 ft. With 1013 set, the altimeter over-reads by ~459 ft. Actual elevation 300 ft + ~459 ft = ~759 ft indicated. The aircraft appears higher than it is, which is the safer error but still incorrect for terrain clearance.',
+  },
+  {
+    id: 15,
+    text: 'During flight through an area of abnormally high surface pressure (1040 hPa), a pilot using a QNH of 1013 hPa (ISA standard) will experience which of the following?',
+    options: [
+      { key: 'A', text: 'The altimeter will under-read; the aircraft is higher than indicated' },
+      { key: 'B', text: 'The altimeter will over-read; the aircraft is lower than indicated' },
+      { key: 'C', text: 'No effect — the altimeter self-corrects for non-ISA pressure' },
+      { key: 'D', text: 'The altimeter will under-read; the aircraft is lower than indicated' },
+    ],
+    answer: 'B',
+    explanation:
+      'In a high-pressure area, surface pressure is higher than ISA standard (1013 hPa). Using 1013 hPa as the setting means the altimeter reads high (aircraft appears higher than actual). The aircraft is therefore lower than the altimeter suggests. High pressure, high reading, low aircraft — a safety-critical scenario near terrain.',
+  },
+
+  /* ─── PART B — Multiple Correct Answers (Q16–Q20) ─── */
+  {
+    id: 16,
+    multi: true,
+    text: 'Which of the following statements about static pressure are correct? Select ALL that apply.',
+    options: [
+      { key: 'A', text: 'Static pressure acts equally on all surfaces of the aircraft' },
+      { key: 'B', text: 'Static pressure only acts on the underside (belly) of the aircraft' },
+      { key: 'C', text: 'Static pressure decreases as altitude increases' },
+      { key: 'D', text: 'Static pressure is caused by the weight of the atmosphere above' },
+    ],
+    answer: ['A', 'C', 'D'],
+    explanation:
+      'Static pressure is omnidirectional — it acts equally on ALL surfaces (not just the underside). It decreases steadily with altitude because there is less air mass above. It is caused by the gravitational weight of the overlying atmosphere.',
+  },
+  {
+    id: 17,
+    multi: true,
+    text: "Which of the following instruments use the aircraft's static pressure source? Select ALL that apply.",
+    options: [
+      { key: 'A', text: 'Altimeter' },
+      { key: 'B', text: 'Attitude Indicator (AI)' },
+      { key: 'C', text: 'Vertical Speed Indicator (VSI)' },
+      { key: 'D', text: 'Airspeed Indicator (ASI)' },
+    ],
+    answer: ['A', 'C', 'D'],
+    explanation:
+      'The Altimeter, VSI, and ASI all depend on the static pressure source. The Attitude Indicator is a gyroscopic instrument driven by vacuum or electrical power; it does not use the static port.',
+  },
+  {
+    id: 18,
+    multi: true,
+    text: "If an aircraft's static port becomes blocked in flight, which of the following effects will occur? Select ALL that apply.",
+    options: [
+      { key: 'A', text: 'The altimeter will freeze at the reading it had when the port blocked' },
+      { key: 'B', text: 'The VSI will indicate zero rate of climb or descent' },
+      { key: 'C', text: 'The magnetic compass will become unreliable' },
+      { key: 'D', text: 'The airspeed indicator will give erroneous or frozen readings' },
+    ],
+    answer: ['A', 'B', 'D'],
+    explanation:
+      'Blockage of the static port deprives the altimeter, VSI, and ASI of updated pressure data simultaneously. The altimeter freezes at its last reading, the VSI shows zero (no pressure change), and the ASI gives erroneous/frozen speed readings. The magnetic compass is independent of the static system and is unaffected.',
+  },
+  {
+    id: 19,
+    multi: true,
+    text: 'Which of the following are correct regarding the units of pressure used in aviation? Select ALL that apply.',
+    options: [
+      { key: 'A', text: '1 hPa is numerically equal to 1 millibar' },
+      { key: 'B', text: '1 Pascal (Pa) equals 1 N/m²' },
+      { key: 'C', text: '1 hPa equals 10 Pascals' },
+      { key: 'D', text: 'The aviation standard sea-level pressure is 1013.25 hPa' },
+    ],
+    answer: ['A', 'B', 'D'],
+    explanation:
+      '1 hPa = 1 mb (exact); 1 Pa = 1 N/m² (definition of the Pascal); ISA sea-level = 1013.25 hPa. Option (C) is wrong: 1 hPa = 100 Pa, not 10 Pa.',
+  },
+  {
+    id: 20,
+    multi: true,
+    text: 'Regarding the pressure-altitude relationship in the ISA, which of the following are correct? Select ALL that apply.',
+    options: [
+      { key: 'A', text: 'Static pressure approximately halves every 18,000 ft' },
+      { key: 'B', text: 'The rate of pressure decrease with altitude is constant (linear)' },
+      { key: 'C', text: 'At 35,000 ft, static pressure is approximately 238 hPa' },
+      { key: 'D', text: 'Pressure and density both decrease with increasing altitude' },
+    ],
+    answer: ['A', 'C', 'D'],
+    explanation:
+      'Pressure halves every ~18,000 ft (not linearly). At FL350, ISA pressure is ~238 hPa. Both pressure and density decrease with altitude. The decrease is NOT linear — it follows a logarithmic relationship (barometric formula), so option (B) is incorrect.',
   },
 ]

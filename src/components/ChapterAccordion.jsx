@@ -106,8 +106,8 @@ export default function ChapterAccordion({ chapter }) {
                       if (isSel) cls += ' selected'
                       if (showAnswers) {
                         const isAns = isMulti ? q.answer.includes(o.key) : o.key === q.answer
-                        if (isAns) cls += ' correct'
-                        else if (isSel) cls += ' wrong'
+                        if (isAns) cls += ' correct-answer'
+                        else if (isSel) cls += ' wrong-answer'
                       }
                       return (
                         <button key={o.key} className={cls} onClick={() => pick(q, o.key)}>
@@ -117,7 +117,10 @@ export default function ChapterAccordion({ chapter }) {
                     })}
                   </div>
                   {showAnswers && (
-                    <p className="qna-explanation"><strong>Explanation:</strong> {q.explanation}</p>
+                    <div className={`qna-explanation ${isCorrect(q) ? 'correct' : 'wrong'}`}>
+                      <p className="qna-verdict">{isCorrect(q) ? '✓ Correct' : `✗ Incorrect — Answer: ${Array.isArray(q.answer) ? q.answer.join(', ') : q.answer}`}</p>
+                      <p><strong>Explanation:</strong> {q.explanation}</p>
+                    </div>
                   )}
                 </div>
               )
